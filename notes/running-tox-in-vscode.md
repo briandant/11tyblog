@@ -4,8 +4,6 @@ layout: layouts/note.liquid
 title: running make and tox targets in VS Code, under nix
 ---
 
-# running make and tox targets in VS Code, under nix
-
 I've been a bit skiddish about running processes in the VS Code terminal.  Generally, the VS Code default mode does too much: auto-loading the venv, grabbing env vars from `.env`, and so on.  And I find myself with excess terminals that I forget to clean up well.
 
 One of the weird things is that there was an env var being set each time a new terminal was opened, and I couldn't easily understand why.  I never really figured it out.  I'd kill VS Code, and the next instance would have the env var there.  I'm sure I could figure out why with some work, but I just defaulted to running things in iTerm, for the most part.

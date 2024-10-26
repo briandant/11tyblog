@@ -4,8 +4,6 @@ layout: layouts/note.liquid
 title: just found the python native REPL in VS Code
 ---
 
-# just found the python native REPL in VS Code
-
 From the [docs](https://code.visualstudio.com/docs/python/run):
 
 > The Python interpreter that is installed on your machine gives you what's known as an interactive REPL (Read-Evaluate-Print Loop), which reads a piece of code, evaluates it, and then prints the result to the console.
