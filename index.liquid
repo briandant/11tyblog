@@ -6,39 +6,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="/output.css" />
   </head>
-  <body class="bg-slate-100 text-black text-opacity-85 px-8 py-8">
+<body class="bg-slate-100 text-black text-opacity-85 px-8 py-8" style="font-family: Georgia, 'Times New Roman', Times, serif;"></body>
     <header>
       <h1>briandant.com</h1>
     </header>
     <nav>
       <ul>
-        {% comment %}
+      {% comment %}
         <li><a href="#home">Home</a></li>
-        {% endcomment %} {% comment %}
+      {% endcomment %}
+      {% comment %}
         <li><a href="#about">About</a></li>
-        {% endcomment %} {% comment %}
+      {% endcomment %}
+      {% comment %}
         <li><a href="#contact">Contact</a></li>
-        {% endcomment %}
+      {% endcomment %}
       </ul>
     </nav>
     <main>
-      <h1 class="text-2xl">Recent Notes</h1>
-
+      <h1 class="text-2xl mt-8">Hi, I'm Brian.</h1>
+      I'm a software engineer at
+      <a href="https://askflux.ai" class="text-blue-500 hover:underline">askflux.ai</a>.
+      <p>I've been doing full stack dev for about 12 years, mostly in Django.</p>
+      <p></p>
+      <h1 class="text-2xl mt-8">Recent Notes</h1>
+      <p class="italic text-xs">Small notes on technical things, written as I work.</p>
       <ul>
         {%- for post in collections.note reversed -%}
-        <li>
-          <a class="text-blue-500 hover:underline" href="{{ post.url }}">
-            {{ post.data.title }} 
-            <time datetime="{{ post.data.page.date | date: '%Y-%m-%d' }}">
-              [ {{ post.data.page.date | date: '%B %d, %Y' }} ]
-            </time>
-          </a>
-        </li>
+          <li>
+            <a class="text-blue-500 hover:underline" href="{{ post.url }}">
+              {{ post.data.title }}
+              <time datetime="{{ post.data.page.date | date: '%Y-%m-%d' }}">
+                [ {{ post.data.page.date | date: '%B %d, %Y' }} ]
+              </time>
+            </a>
+          </li>
         {%- endfor -%}
       </ul>
     </main>
-    <footer class="absolute bottom-0 pb-8" >
-        <p><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International License</a>.</p>
+    <footer class="absolute bottom-0 pb-8">
+      <p>
+        <a
+          href="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noopener noreferrer">Creative Commons Attribution 4.0 International License</a>.</p>
     </footer>
   </body>
 </html>
