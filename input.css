@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+blockquote {
+  @apply bg-slate-100 border-l-4 border-slate-300 italic pl-4 my-4;
+}
