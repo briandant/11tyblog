@@ -28,7 +28,9 @@ layout: layouts/base
     {%- for post in collections.link reversed -%}
       <li>
         <a class="visited:text-slate-600 underline" href="{{ post.url }}">
-          {{ post.data.title }}. {{ post.data.author }}. {{ post.data.externallink }}.
+          <span class="italic">{{ post.data.title }}.</span>
+          <span>{{ post.data.author }}.</span>
+          <span>{{ post.data.externalLink }}.</span>
           <time datetime="{{ post.data.page.date | date: '%Y-%m-%d' }}">
             {{ post.data.page.date | date: '%B %d, %Y' }}.
           </time>
