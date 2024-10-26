@@ -1,11 +1,8 @@
 ---
 tags: note
+layout: note.liquid
 title: annotating a django queryset with a charfield
 ---
-
-# annotating a django queryset with a charfield
-
-<time class="text-3xl" datetime="{{ page.date }}">{{ page.date }}</time>
 
 Say that I'm putting together an inventory of my daughter's lost snacks.  And I want to see all the Skittles that are in the couch cushions.  That would never happen in my house, but ya know.  
 

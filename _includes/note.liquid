@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-slate-300 p-8">
+    <main>
+        <article aria-labelledby="post-title">
+            <header>
+                <h2 id="post-title" class="text-xl">{{ title }}</h2>
+            </header>
+            <p class="text-xs text-gray-600">Published on <time datetime="{{ page.date }}">{{ page.date }}</time></p>
+            <section class="mt-4">
+                {{ content }}
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; {{ "now" | date: "%Y" }} Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
