@@ -1,3 +1,3 @@
-export default function (eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("output.css");
 };
