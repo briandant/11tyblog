@@ -1,3 +1,8 @@
+---
+tags: note
+title: running make and tox targets in VS Code, under nix
+---
+
 # running make and tox targets in VS Code, under nix
 
 I've been a bit skiddish about running processes in the VS Code terminal.  Generally, the VS Code default mode does too much: auto-loading the venv, grabbing env vars from `.env`, and so on.  And I find myself with excess terminals that I forget to clean up well.

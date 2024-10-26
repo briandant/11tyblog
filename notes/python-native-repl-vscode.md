@@ -1,3 +1,8 @@
+---
+tags: note
+title: just found the python native REPL in VS Code
+---
+
 # just found the python native REPL in VS Code
 
 From the [docs](https://code.visualstudio.com/docs/python/run):

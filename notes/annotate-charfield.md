@@ -1,3 +1,8 @@
+---
+tags: note
+title: annotating a django queryset with a charfield
+---
+
 # annotating a django queryset with a charfield
 
 Say that I'm putting together an inventory of my daughter's lost snacks.  And I want to see all the Skittles that are in the couch cushions.  That would never happen in my house, but ya know.  
@@ -21,8 +26,6 @@ class SkittleLocation(models.Model):
     skittle = models.ForeignKey(Skittles, on_delete=models.CASCADE)
     location = models.ForeignKey(Locations, on_delete=models.CASCADE)
 ```
-
-
 
 And I want to display all of them in the filter view, but I want the dropdown to show `red - couch`.  
 
