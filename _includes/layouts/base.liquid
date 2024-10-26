@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/output.css" />
+  </head>
+<body class="bg-slate-100 text-black text-opacity-85 px-8 py-8" style="font-family: Georgia, 'Times New Roman', Times, serif;"></body>
+    <header>
+      <h1>briandant.com</h1>
+    </header>
+    <nav>
+      <ul>
+      {% comment %}
+        <li><a href="#home">Home</a></li>
+      {% endcomment %}
+      {% comment %}
+        <li><a href="#about">About</a></li>
+      {% endcomment %}
+      {% comment %}
+        <li><a href="#contact">Contact</a></li>
+      {% endcomment %}
+      </ul>
+    </nav>
+    <main>
+        {{ content }}
+    </main>
+    <footer class="absolute bottom-0 pb-8">
+      <p>
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+          
+          rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International</a>.</p>
+    </footer>
+  </body>
+</html>
