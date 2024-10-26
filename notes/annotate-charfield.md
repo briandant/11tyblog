@@ -1,6 +1,6 @@
 ---
 tags: note
-layout: note.liquid
+layout: layouts/note.liquid
 title: annotating a django queryset with a charfield
 ---
 

@@ -1,5 +1,6 @@
 ---
 tags: note
+layout: layouts/note.liquid
 title: just found the python native REPL in VS Code
 ---
 

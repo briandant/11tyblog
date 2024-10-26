@@ -1,5 +1,6 @@
 ---
 tags: note
+layout: layouts/note.liquid
 title: running make and tox targets in VS Code, under nix
 ---
 
