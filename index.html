@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/output.css" />
   </head>
-  <body>
+  <body class="bg-slate-200 text-black text-opacity-85 px-8 py-8">
     <header>
       <h1>briandant.com</h1>
     </header>
@@ -21,17 +22,16 @@
       </ul>
     </nav>
     <main>
-      <h1>Recent Notes</h1>
+      <h1 class="text-2xl">Recent Notes</h1>
+
       <ul>
-        <ul>
-          {%- for post in collections.note reversed -%}
-          <li>
-            <a href="{{ post.url }}" ˛
-              >{{ post.data.title }} [ {{ post.data.date }} ]
-            </a>
-          </li>
-          {%- endfor -%}
-        </ul>
+        {%- for post in collections.note reversed -%}
+        <li>
+          <a class="text-blue-500 hover:underline" href="{{ post.url }}">
+            {{ post.data.title }} [ {{ post.date˛ }} ]
+          </a>
+        </li>
+        {%- endfor -%}
       </ul>
     </main>
     <footer>
