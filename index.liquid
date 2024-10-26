@@ -6,13 +6,14 @@ layout: layouts/base
   I'm a software engineer at
   <a href="https://askflux.ai" class="text-blue-500 hover:underline">askflux.ai</a>.
   <p>I've been doing full stack dev for about 12 years, mostly in Django.</p>
+  <p>I read and write about theology and tech.</p>
   <p></p>
   <h2 class="text-2xl mt-8">Recent Notes</h2>
   <p class="italic text-xs">Small notes on technical things, written as I work.</p>
   <ul>
     {%- for post in collections.note reversed -%}
       <li>
-        <a class="text-blue-500 hover:underline" href="{{ post.url }}">
+        <a class="visited:text-slate-600 underline" href="{{ post.url }}">
           {{ post.data.title }}
           <time datetime="{{ post.data.page.date | date: '%Y-%m-%d' }}">
             [ {{ post.data.page.date | date: '%B %d, %Y' }} ]
@@ -26,10 +27,10 @@ layout: layouts/base
   <ul>
     {%- for post in collections.link reversed -%}
       <li>
-        <a class="text-blue-500 hover:underline" href="{{ post.url }}">
-          {{ post.data.title }}
+        <a class="visited:text-slate-600 underline" href="{{ post.url }}">
+          {{ post.data.title }}. {{ post.data.author }}. {{ post.data.externallink }}.
           <time datetime="{{ post.data.page.date | date: '%Y-%m-%d' }}">
-            [ {{ post.data.page.date | date: '%B %d, %Y' }} ]
+            {{ post.data.page.date | date: '%B %d, %Y' }}.
           </time>
         </a>
       </li>
