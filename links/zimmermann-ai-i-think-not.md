@@ -1,8 +1,9 @@
 ---
 tags: link
+layout: layouts/link
 title: Artificial Intelligence? I think not!
 author: Jens Zimmermann
-externallink: https://blog.oup.com/2024/07/artificial-intelligence-i-think-not/
+externalLink: https://blog.oup.com/2024/07/artificial-intelligence-i-think-not/
 ---
 
 From my supervisor:
