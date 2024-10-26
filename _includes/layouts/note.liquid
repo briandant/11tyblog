@@ -1,0 +1,16 @@
+---
+layout: layouts/base
+---
+<main>
+  <article aria-labelledby="post-title">
+    <header>
+      <h2 id="post-title" class="text-xl">{{ title }}</h2>
+    </header>
+    <p class="text-xs text-slate-600">Published on
+      <time datetime="{{ page.date }}">{{ page.date }}</time>
+    </p>
+    <section class="mt-4">
+      {{ content }}
+    </section>
+  </article>
+</main>
