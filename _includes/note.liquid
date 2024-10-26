@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/output.css">
-</head>
-<body class="bg-slate-100 p-8">
+  </head>
+  <body class="bg-slate-100 p-8">
     <main>
-        <article aria-labelledby="post-title">
-            <header>
-                <h2 id="post-title" class="text-xl">{{ title }}</h2>
-            </header>
-            <p class="text-xs text-gray-600">Published on <time datetime="{{ page.date }}">{{ page.date }}</time></p>
-            <section class="mt-4">
-                {{ content }}
-            </section>
-        </article>
+      <article aria-labelledby="post-title">
+        <header>
+          <h2 id="post-title" class="text-xl">{{ title }}</h2>
+        </header>
+        <p class="text-xs text-gray-600">Published on
+          <time datetime="{{ page.date }}">{{ page.date }}</time>
+        </p>
+        <section class="mt-4">
+          {{ content }}
+        </section>
+      </article>
     </main>
-    <footer class="absolute bottom-0 pb-8" >
-        <p><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International License</a>.</p>
+    <footer class="absolute bottom-0 pb-8">
+      <p>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International</a>.</p>
     </footer>
-</body>
+  </body>
 </html>
