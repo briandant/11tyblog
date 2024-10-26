@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/output.css" />
   </head>
-  <body class="bg-slate-200 text-black text-opacity-85 px-8 py-8">
+  <body class="bg-slate-100 text-black text-opacity-85 px-8 py-8">
     <header>
       <h1>briandant.com</h1>
     </header>
@@ -28,16 +28,17 @@
         {%- for post in collections.note reversed -%}
         <li>
           <a class="text-blue-500 hover:underline" href="{{ post.url }}">
-            {{ post.data.title }} [ {{ post.date˛ }} ]
+            {{ post.data.title }} 
+            <time datetime="{{ post.data.page.date | date: '%Y-%m-%d' }}">
+              [ {{ post.data.page.date | date: '%B %d, %Y' }} ]
+            </time>
           </a>
         </li>
         {%- endfor -%}
       </ul>
     </main>
-    <footer>
-      {% comment %}
-      <p>&copy; 2023 My Blog</p>
-      {% endcomment %}
+    <footer class="absolute bottom-0 pb-8" >
+        <p><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International License</a>.</p>
     </footer>
   </body>
 </html>

@@ -6,7 +6,7 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/output.css">
 </head>
-<body class="bg-slate-300 p-8">
+<body class="bg-slate-100 p-8">
     <main>
         <article aria-labelledby="post-title">
             <header>
@@ -18,8 +18,8 @@
             </section>
         </article>
     </main>
-    <footer>
-        <p>&copy; {{ "now" | date: "%Y" }} Your Name. All rights reserved.</p>
+    <footer class="absolute bottom-0 pb-8" >
+        <p><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International License</a>.</p>
     </footer>
 </body>
 </html>
