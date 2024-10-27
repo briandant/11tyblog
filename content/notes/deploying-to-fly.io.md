@@ -36,3 +36,7 @@ if FLY_ENV:
     SECRET_KEY = env.str("SECRET_KEY")
     ALLOWED_HOSTS = [f"{FLY_APP_NAME}.fly.dev"]
 ```
+
+And don't miss [these instructions](https://fly.io/docs/postgres/getting-started/what-you-should-know/) on managing your PG instance:
+
+> This is not a managed database. If Postgres crashes because it ran out of memory or disk space, you’ll need to do a little work to get it back.
