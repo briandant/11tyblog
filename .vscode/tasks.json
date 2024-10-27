@@ -16,7 +16,7 @@
         {
             "id": "type",
             "type": "pickString",
-            "description": "Select the type of note",
+            "description": "Select the type of page",
             "options": [
                 "note",
                 "link"
@@ -25,7 +25,7 @@
         {
             "id": "title",
             "type": "promptString",
-            "description": "Enter the title for the note"
+            "description": "Enter the title"
         },
     ]
 }

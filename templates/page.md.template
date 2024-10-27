@@ -1,5 +1,5 @@
 ---
-tags: {{TYPE}}
-layout: layouts/{{TYPE}}.liquid
-title: {{TITLE}}
+tags: TYPE
+layout: layouts/TYPE.liquid
+title: TITLE
 ---
