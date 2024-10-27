@@ -15,6 +15,11 @@ pre {
   @apply mb-4;
 }
 
+
 ol {
   @apply list-decimal list-inside mb-4;
+}
+
+ul {
+  @apply list-disc list-inside mb-4;
 }
