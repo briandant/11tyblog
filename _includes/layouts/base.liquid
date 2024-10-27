@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="/output.css" />
   </head>
-<body class="bg-slate-100 text-black text-opacity-85 px-8 py-8" style="font-family: Georgia, 'Times New Roman', Times, serif;"></body>
-    <header class="mb-4">
+<body class="flex flex-col min-h-screen text-black bg-slate-100 text-opacity-85" style="font-family: Georgia, 'Times New Roman', Times, serif;"></body>
+    <header class="mb-4 px-8 pt-8">
       <h1>briandant.com</h1>
     </header>
     <nav>
@@ -23,15 +23,13 @@
       {% endcomment %}
       </ul>
     </nav>
-    <main>
+    <main class="px-8">
         {{ content }}
     </main>
-    <footer class="absolute bottom-0 pb-8">
-      <p>
-        <a
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-          
-          rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International</a>.</p>
+    <footer class="p-8 mt-auto bg-blue-100">
+        <p>
+        <a class=" underline" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International</a>.</p>
     </footer>
   </body>
 </html>
