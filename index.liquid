@@ -1,40 +1,45 @@
 ---
-layout: layouts/base 
+layout: layouts/base
 ---
+
 <main>
   <h1 class="text-2xl mt-8">Hi, I'm Brian.</h1>
-  <p class="mb-0">I'm a software engineer at
-    <a href="https://askflux.ai" class="text-blue-500 hover:underline">askflux.ai</a>.
+  <p class="mb-0">
+    I'm a software engineer at <a href="https://askflux.ai">askflux.ai</a>.
   </p>
-  <p class="mb-0">I've been doing full stack dev for about 12 years, mostly in Django.</p>
+  <p class="mb-0">
+    I've been doing full stack dev for about 12 years, mostly in Django.
+  </p>
   <p class="mb-0">I read and write about theology and tech.</p>
   <h2 class="text-2xl mt-8">Recent Notes</h2>
-  <p class="italic text-xs">Small notes on technical things, written as I work.</p>
+  <p class="italic text-xs">
+    Small notes on technical things, written as I work.
+  </p>
   <ul class="list-disc list-inside">
     {%- for post in collections.note reversed -%}
-      <li>
-        <a class="visited:text-slate-600 underline" href="{{ post.url }}">
-          {{ post.data.title }}
-          <time datetime="{{ post.data.page.date | date: '%Y-%m-%d' }}">
-            [ {{ post.data.page.date | date: '%B %d, %Y' }} ]
-          </time>
-        </a>
-      </li>
+    <li>
+      <a href="{{ post.url }}">
+        {{ post.data.title }}
+        <time datetime="{{ post.data.page.date | date : '%Y-%m-%d' }}">
+          [ {{ post.data.page.date | date : "%B %d, %Y" }} ]
+        </time>
+      </a>
+    </li>
     {%- endfor -%}
   </ul>
   <h2 class="text-2xl mt-8">Recent Links</h2>
   <p class="italic text-xs">Interesting things from around the web.</p>
   <ul class="list-disc list-inside">
     {%- for post in collections.link reversed -%}
-      <li>
-        <a class="visited:text-slate-600 underline" href="{{ post.url }}">
-          <span class="italic">{{ post.data.title }}.</span>
-          <span>{{ post.data.author }}.</span>
-          <time datetime="{{ post.data.page.date | date: '%Y-%m-%d' }}">
-            {{ post.data.page.date | date: '%B %d, %Y' }}.
-          </time>
-        </a>
-      </li>
+    <li>
+      <a href="{{ post.url }}">
+        <span class="italic">{{ post.data.title }}.</span>
+        <span>{{ post.data.author }}.</span>
+        <time datetime="{{ post.data.page.date | date : '%Y-%m-%d' }}">
+          {{ post.data.page.date | date : "%B %d, %Y" }}.
+        </time>
+      </a>
+    </li>
     {%- endfor -%}
   </ul>
 </main>

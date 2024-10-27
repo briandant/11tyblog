@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  @apply underline visited:text-slate-600;
+}
+
 blockquote {
   @apply bg-slate-100 border-l-4 border-slate-300 italic pl-4 my-4;
 }
@@ -12,5 +16,5 @@ pre {
 }
 
 ol {
-  @apply list-decimal list-inside;
+  @apply list-decimal list-inside mb-4;
 }
