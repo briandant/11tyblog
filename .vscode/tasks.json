@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "init page",
+            "type": "shell",
+            "command": "./makepage.sh",
+            "args": [
+                "${input:type}",
+                "${input:title}"
+            ],
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "type",
+            "type": "pickString",
+            "description": "Select the type of note",
+            "options": [
+                "note",
+                "link"
+            ]
+        },
+        {
+            "id": "title",
+            "type": "promptString",
+            "description": "Enter the title for the note"
+        },
+    ]
+}
