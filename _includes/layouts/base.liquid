@@ -6,32 +6,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="/output.css" />
   </head>
-<body class="flex flex-col min-h-screen text-black bg-slate-100 text-opacity-85" style="font-family: Georgia, 'Times New Roman', Times, serif;"></body>
-    <header class="mb-4 px-8 pt-8">
-      <h1>
-        <a href="/">briandant.com</a>
-      </h1>
-    </header>
-    <nav>
-      <ul>
-      {% comment %}
-        <li><a href="#home">Home</a></li>
-      {% endcomment %}
-      {% comment %}
-        <li><a href="#about">About</a></li>
-      {% endcomment %}
-      {% comment %}
-        <li><a href="#contact">Contact</a></li>
-      {% endcomment %}
-      </ul>
-    </nav>
-    <main class="px-8">
-        {{ content }}
-    </main>
-    <footer class="p-8 mt-auto bg-white">
-        <p>
-        <a class=" underline" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-            rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International</a>.</p>
+  <body class="flex flex-col min-h-screen text-black bg-slate-100 text-opacity-85" style="font-family: Georgia, 'Times New Roman', Times, serif">
+    <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-4">
+      <div class="lg:col-span-2 md:col-span-3">
+        <header class="mb-4 px-8 pt-8">
+          <h1>
+            <a href="/">briandant.com</a>
+          </h1>
+        </header>
+        <nav>
+          <ul>
+          {% comment %}
+            <li><a href="#home">Home</a></li>
+          {% endcomment %}
+          {% comment %}
+            <li><a href="#about">About</a></li>
+          {% endcomment %}
+          {% comment %}
+            <li><a href="#contact">Contact</a></li>
+          {% endcomment %}
+          </ul>
+        </nav>
+        <main class="px-8">
+          {{ content }}
+        </main>
+      </div>
+      <div></div>
+    </div>
+    <footer class="p-8 mt-auto">
+      <p>...</p>
+      <p>
+        <a
+          class="underline"
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+          rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International</a>.
+      </p>
     </footer>
   </body>
 </html>
