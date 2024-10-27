@@ -2,6 +2,7 @@
 tags: note
 layout: layouts/note.liquid
 title: running make and tox targets in VS Code, under nix
+date: "git Created"
 ---
 
 I've been a bit skiddish about running processes in the VS Code terminal.  Generally, the VS Code default mode does too much: auto-loading the venv, grabbing env vars from `.env`, and so on.  And I find myself with excess terminals that I forget to clean up well.

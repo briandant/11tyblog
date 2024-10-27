@@ -2,6 +2,7 @@
 tags: note
 layout: layouts/note.liquid
 title: annotating a django queryset with a charfield
+date: "git Created"
 ---
 
 Say that I'm putting together an inventory of my daughter's lost snacks.  And I want to see all the Skittles that are in the couch cushions.  That would never happen in my house, but ya know.  

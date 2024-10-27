@@ -2,6 +2,7 @@
 tags: note
 layout: layouts/note.liquid
 title: i made a cookiecutter
+date: "git Created"
 ---
 
 EDIT: I'm *making* a cookiecutter.  It's working, but that's about it. <https://github.com/briandant/cookiecutter-dj-thedude>

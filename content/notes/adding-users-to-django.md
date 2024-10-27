@@ -2,6 +2,7 @@
 tags: note
 layout: layouts/note.liquid
 title: adding users to django
+date: "git Created"
 ---
 
 Still [working towards creating a cookiecutter template]({{'/content/notes/i-made-a-cookiecutter.md/' | url }}).  I'm enjoying the aspect of refreshing my fundamental Django knowledge.  E.g., I create a users app like once every five years at work.  I'll add that today.

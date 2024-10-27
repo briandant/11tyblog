@@ -2,6 +2,7 @@
 tags: note
 layout: layouts/note.liquid
 title: just found the python native REPL in VS Code
+date: "git Created"
 ---
 
 From the [docs](https://code.visualstudio.com/docs/python/run):

@@ -4,6 +4,7 @@ layout: layouts/link
 title: Artificial Intelligence? I think not!
 author: Jens Zimmermann
 externalLink: https://blog.oup.com/2024/07/artificial-intelligence-i-think-not/
+date: "git Created"
 ---
 
 From my supervisor:

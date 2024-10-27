@@ -2,6 +2,7 @@
 tags: note
 layout: layouts/note.liquid
 title: creating a simple Django app
+date: "git Created"
 ---
 
 Next step for my [cookiecutter template]({{'/content/notes/i-made-a-cookiecutter.md/' | url }}) is to create a basic app, and a landing page.  

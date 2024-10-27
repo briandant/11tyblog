@@ -2,6 +2,7 @@
 tags: note
 layout: layouts/note.liquid
 title: deploying to fly.io
+date: "git Created"
 ---
 
 The [getting started with Django on Fly.io guide](https://fly.io/docs/django/getting-started/) is nice, and generally things worked smoothly.  I'll add a few things for using Postgres:

@@ -2,6 +2,7 @@
 tags: note
 layout: layouts/note.liquid
 title: templating eleventy pages with a vs code task
+date: "git Created"
 ---
 
 With VS Code open, I want to quickly create a note.  I created a VS Code Task and a shell script to do the templating work.
