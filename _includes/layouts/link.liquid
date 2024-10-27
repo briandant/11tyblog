@@ -7,10 +7,10 @@ layout: layouts/base
     <h2 id="post-title" class="text-xl">{{ title }}</h2>
   </header>
   <section class="mb-4">
-    <p class="text-xs text-slate-600">
+    <p class="mb-0 text-xs text-slate-600">
       <time datetime="{{ page.date }}">{{ page.date }}</time>
     </p>
-    <p class="text-xs text-slate-600">Author: {{ author }}</p>
+    <p class="text-xs mb-0 text-slate-600">Author: {{ author }}</p>
   </section>
   {{ content }}
   <a
