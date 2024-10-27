@@ -1,0 +1,14 @@
+{
+  "name": "11tyblog",
+  "version": "1.0.0",
+  "description": "Code herein is shared under the MIT license.   Everything else is [Attribution-NonCommercial-ShareAlike 4.0 International](\"https://creativecommons.org/licenses/by-nc-sa/4.0/\")",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  }
+}
