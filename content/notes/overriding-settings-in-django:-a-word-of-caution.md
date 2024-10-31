@@ -61,7 +61,7 @@ class LLMExceptionTestCase(TestCase):
                 service.do_stuff()
 ```
 
-The test will fail, because the service is instantiated outside of the `self.settings` modification.  
+The test will fail, because the service is instantiated outside of the `self.settings` modification; the service will have the value it took from settings when it was instantiated, not the new
 
 Maybe that's obvious, in hindsight, but there was enough complexity here that I was thrown off for a minute (er, maybe a little longer ;)).
 
