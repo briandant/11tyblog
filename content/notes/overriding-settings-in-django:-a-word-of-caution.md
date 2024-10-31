@@ -1,11 +1,11 @@
 ---
 tags: note
 layout: layouts/note.liquid
-title: "overriding settings in django: a word of caution"
+title: "overriding settings in django: a cautionary tale"
 date: "git Created"
 ---
 
-We've been using a pattern for stubs in `settings.py`.  It allows us to create a stub class for, e.g., the a LLM wrapper—we don't want to actually hit the API. Then, if we're running tests, the stub class will be used.  It looks something like this:
+We've been using a pattern for stubs in `settings.py`.  It allows us to create a stub class for, e.g., an LLM wrapper—we don't want to actually hit the API. If we're running tests, the stub class will be used.  The setting config looks something like this:
 
 ```python
 # settings.py
@@ -30,7 +30,7 @@ class IUseAnLLM:
 
 In `do_stuff()`, the stub will be used, when we're testing.
 
-That's all good, but when I want to raise an exception in `do_stuff()`, and test that the code is responding well, I have to "mock" that stub.  Since the class to be mocked is in `settings.py`, you can't mock it; Django doesn't treat that like a normal model, so there's warnings to not treat it as a module.  Instead, Django offers alternative interfaces to override settings.  In a test, one way to do it is like this:
+That's all good, but when I want to raise an exception in `do_stuff()`, and test that the code is responding well, I have to "mock" that stub.  Since the class to be mocked is in `settings.py`, you can't mock it; Django does some dynamic stuff in the background, so we can't treat it like a normal module.  Instead, Django offers alternative interfaces to override settings.  In a test, one way to do it is like this:
 
 ```python
 class MyTestCase:
@@ -63,7 +63,7 @@ class LLMExceptionTestCase(TestCase):
 
 The test will fail, because the service is instantiated outside of the `self.settings` modification.  
 
-Maybe that's obvious, in hindsight, but there was enough complexity here that I was thrown off for a minute (er, maybe a little longer ;).
+Maybe that's obvious, in hindsight, but there was enough complexity here that I was thrown off for a minute (er, maybe a little longer ;)).
 
 I thought for a second that the issue was related to [`function-call-in-default-argument`](https://docs.astral.sh/ruff/rules/function-call-in-default-argument/#function-call-in-default-argument-b008), from `flake-8-bugbear`.  But that's a little different.  My issue was with handling Django settings properly, not with the function definition, though it's worth noting the rationale against the `function-call-in-def`:
 
