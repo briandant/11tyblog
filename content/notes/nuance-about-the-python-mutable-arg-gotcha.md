@@ -5,15 +5,19 @@ title: nuance about the Python mutable arg gotcha
 date: "git Created"
 ---
 
-I hit a gotcha today when writing a Python function.  I wanted to add some nuance to document Python's odd behavior.  The gotcha, from the [Ruff docs](https://docs.astral.sh/ruff/rules/mutable-argument-default):
+I hit a gotcha today when writing a Python function.  In this note, I wanted to add some nuance to document Python's behavior.  The problem, from the [Ruff docs](https://docs.astral.sh/ruff/rules/mutable-argument-default), is:
 
+> ## Why is this bad?
+>
+> Function defaults are evaluated once, when the function is defined.
+>
 > The same mutable object is then shared across all calls to the function. If the object is modified, those modifications will persist across calls, which can lead to unexpected behavior.
 >
 > Instead, prefer to use immutable data structures, or take None as a default, and initialize a new mutable object inside the function body for each call.
 
 (cf. the [_Hitchhiker's Guide to Python_](https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments).)
 
-The examples in both of those page are helpful, but I wanted to lay out the difference between a default mutabled argument that is actually mutated, and one that is not.  The bottom line: if you don't mutate the argument, you won't get the unexpected, gotcha behavior.
+The examples in both of those page are helpful, but I wanted to lay out the what happens when the mutable argument is mutated, and compare that to a function that does not mutate it.  The bottom line: if you don't mutate the argument, you won't get the unexpected, gotcha behavior.
 
 ```python
 In [28]: def does_mutate(alist=[]):
