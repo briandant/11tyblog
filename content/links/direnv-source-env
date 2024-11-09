@@ -2,7 +2,7 @@
 tags: link
 layout: layouts/link.liquid
 title: Direnv's `source_env`, and how to manage project configuration
-author: "brandur.org
+author: "brandur.org"
 externalLink: "https://brandur.org/fragments/direnv-source-env"
 date: "git Created"
 ---
