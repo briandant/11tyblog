@@ -13,7 +13,7 @@ I then started using a [plugin for direnv](https://marketplace.visualstudio.com/
 pvsc_utils.VSCodeUnittestError: DJANGO ERROR: An error occurred while discovering and building the test suite. Error: Error attempting to connect to extension named pipe /var/folders/l3/tn48czyn38nfr8dqkfbyf8_40000gn/T/nix-shell.TutI0O/python-test-discovery-9b761bb58dc888e589f8.sock[vscode-unittest]: AF_UNIX path too long
 ```
 
-The Python extension, apparently, was creating it's sockets nested in the nix env.  
+The Python extension, apparently, was creating its sockets nested in the nix env.  
 
 To fix this, I set this in my `.env`:
 
