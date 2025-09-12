@@ -7,4 +7,7 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addLayoutAlias("link", "layouts/link.liquid");
   // Copy the `images` directory to the output
   eleventyConfig.addPassthroughCopy("images");
+  
+  // Ignore .trunk directory which contains Django templates
+  eleventyConfig.ignores.add(".trunk/**");
 };
